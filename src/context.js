@@ -9,6 +9,7 @@ export const AppContextProvider = props => {
   const [products, setProducts] = React.useState(productData);
   const [shoppingCart, setShoppingCart] = React.useState([]);
   const [totalCartPrice, setTotalCartPrice] = React.useState(0);
+  const [input, setInput] = React.useState('')
 
   const filterProductsByName = React.useCallback(name => {}, []);
   const addProductToCart = React.useCallback(product => {}, []);
